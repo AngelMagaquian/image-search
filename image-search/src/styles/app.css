@@ -1,0 +1,47 @@
+.image-container {
+  margin-top: 4rem !important;
+  margin: 1rem;
+}
+
+.image-container .card {
+  padding: 1rem !important;
+  margin-bottom: 3rem;
+  width: 85% !important;
+  background-color: #ffff !important;
+  border-radius: 20px !important;
+  border: 1px solid transparent !important;
+}
+
+.image-container .card .card-footer {
+  border-top: none;
+  background-color: transparent;
+}
+
+.image-container .card .card-footer p {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.151);
+}
+
+.image-container .card .card-footer p:hover {
+  border-bottom: 1px solid #8685ef;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+}
+
+.image-container .card .card-body img {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.image-container .card .card-body .card-info {
+  padding-top: 1rem;
+}
+
+.image-container .card .card-body .card-info .bi {
+  height: 30px;
+  padding-right: 2px;
+}
+
+body {
+  background-color: #ACA9BB !important;
+}
+/*# sourceMappingURL=app.css.map */
