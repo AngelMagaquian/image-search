@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from './components/navbar'
 import ImageCards from './components/imageCards'
+import Search from './components/search'
 import './styles/app.css'
 import {clientID, endPoint} from './access/unsplash'
 
@@ -32,21 +33,22 @@ function App() {
 
   return (
       <div className="app-container">
-         <Navbar handleSearch={handleSearch}/>
+         <Navbar/>
          <div className="header">
-            <div className="container">
+            <div className="container text-center">
               <div className="row">
                 <h1>Image Search!</h1>
                 <h6>Unsplash API</h6>
               </div>
+              <div className="row">
+                <Search handleSearch={handleSearch}/>
+              </div>
             </div>
-            <div className="row">
-
-            </div>
+            
           </div>
          
-         <div className="image-container">
-           <div className="row">
+         <div className="container image-container">
+           <div className="row ">
             {image.length ? 
                 image.map(img =>(<ImageCards key={img.id} data={img} handleLike={handleLike}/>))
                 : null

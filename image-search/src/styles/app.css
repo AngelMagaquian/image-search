@@ -1,6 +1,5 @@
 .image-container {
   margin-top: 4rem !important;
-  margin: 1rem;
 }
 
 .image-container .card {
@@ -48,6 +47,45 @@
 
 .app-container {
   margin: 0;
+}
+
+.app-container .header .search-container {
+  margin-top: 3rem;
+}
+
+.app-container .header .search-container .search {
+  background-color: #474554b7;
+  border: none;
+  border-bottom: solid 4px #8685EF;
+  color: white;
+  outline: none;
+}
+
+.app-container .header .search-container .search:focus {
+  background-color: #474554;
+  -webkit-box-shadow: 0 0 0 .25rem #8785ef56;
+          box-shadow: 0 0 0 .25rem #8785ef56;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.app-container .header .search-container .btn {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.app-container .header .search-container .btn:hover {
+  background-color: #8685EF !important;
+  border: none;
+  -webkit-box-shadow: 0 0 0 .25rem #8785ef56;
+          box-shadow: 0 0 0 .25rem #8785ef56;
+}
+
+.app-container .header .search-container .btn:active {
+  background-color: #8685EF !important;
+  border: none !important;
+  -webkit-box-shadow: 0 0 0 .25rem #8785ef56;
+          box-shadow: 0 0 0 .25rem #8785ef56;
 }
 
 .app-container .header h1 {
