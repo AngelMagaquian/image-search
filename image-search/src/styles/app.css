@@ -41,6 +41,24 @@
   padding-right: 2px;
 }
 
+.image-container .card .card-body .card-info .like {
+  background-color: transparent;
+  border: none;
+}
+
+.app-container {
+  margin: 0;
+}
+
+.app-container .header h1 {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.app-container .header h6 {
+  text-align: center;
+}
+
 body {
   background-color: #ACA9BB !important;
 }
