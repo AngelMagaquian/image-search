@@ -1,0 +1,36 @@
+.footer{
+    
+/*     height: 50vh;
+    padding-top: 11rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    position: fixed; */
+ 
+   /*  .title{
+        
+    } */
+    .author-container{
+        .text{
+            font-family: 'Ubuntu' !important;
+             text-align: right;
+        }
+        
+    }
+
+    .bi{
+        padding-left: 1rem;
+        width: 5%;
+        height: 100%;
+        max-width: 45px;
+        min-width: 30px; 
+        fill: #696676 !important;
+    }
+
+    a :hover{
+        fill: #474554 !important;
+        transition: all 0.5s;
+    }
+    
+}

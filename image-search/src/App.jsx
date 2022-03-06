@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import Navbar from './components/navbar'
 import ImageCards from './components/imageCards'
 import Search from './components/search'
+import Footer from "./components/footer";
 import './styles/app.css'
-import {clientID, endPoint} from './access/unsplash'
+import { unsplash } from './access/unsplash'
 
 
 
@@ -14,11 +15,16 @@ function App() {
   const [image, setImage]= useState([])
   //llamada a la API
   const handleSearch= async(value) =>{
-    const res = await fetch(endPoint+value,{headers:{Authorization:'Client-ID '+clientID}})
+    const res = await fetch(unsplash.endPoint_Search+value,{headers:{Authorization:'Client-ID '+unsplash.clientID}})
     const data = await res.json()
     console.log(data.results)
     setImage(data.results)
   }
+
+
+  
+
+   
 
   const handleLike = (id) =>{
     let img = image.find((image=> id == image.id))
@@ -32,30 +38,32 @@ function App() {
   }
 
   return (
-      <div className="app-container">
-         <Navbar/>
-         <div className="header">
-            <div className="container text-center">
-              <div className="row">
-                <h1>Image Search!</h1>
-                <h6>Unsplash API</h6>
-              </div>
-              <div className="row">
-                <Search handleSearch={handleSearch}/>
-              </div>
+    <div className="app-container">
+       <Navbar/>
+       <div className="header">
+          <div className="container text-center">
+            <div className="row">
+              <h1>Image Search!</h1>
+              <h6>Unsplash API</h6>
             </div>
-            
+            <div className="row">
+              <Search handleSearch={handleSearch}/>
+            </div>
           </div>
-         
-         <div className="container image-container">
-           <div className="row ">
-            {image.length ? 
-                image.map(img =>(<ImageCards key={img.id} data={img} handleLike={handleLike}/>))
-                : null
-            }
-           </div>
+          
+        </div>
+       
+       <div className="container image-container">
+         <div className="row ">
+          {image.length ? 
+              image.map(img =>(<ImageCards key={img.id} data={img} handleLike={handleLike}/>))
+              : null
+          }
          </div>
-      </div>
+       </div>
+
+       <Footer/>
+    </div>
    
   );
 }

@@ -9,14 +9,14 @@ const imageCards = (props) => {
     <div className='col-sm-6'>
         <div className="card">
             <h5 className="card-title">
-                {data.description != null ? <h3>{data.description.charAt(0).toUpperCase() + data.description.slice(1)}</h3> : data.alt_description}
+                {data.description != null ? data.description.charAt(0).toUpperCase() + data.description.slice(1) : data.alt_description}
             </h5>
             <div className="card-body">
                 <img src={data.urls.regular} alt={data.alt_description} className='card-img-top' onClick={() => open(data.links.html)}/>
                 <Info data={data} handleLike={handleLike} />
             </div>
             <div className="card-footer">
-                {imgTag.map(tag => (<p>{tag.title}</p>))}
+                {imgTag.map(tag => (<p key={tag.title} className="text-muted">#{tag.title}</p>))}
             </div>
         </div>
     </div>
