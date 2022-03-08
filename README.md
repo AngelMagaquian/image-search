@@ -21,6 +21,7 @@ Image search is a project using the [unsplash](https://unsplash.com/developers) 
 ## Images
 
 ![This is a sample.](/image-search/src/assets/screenShoot1.png "This is a sample.")
+![This is a sample.](/image-search/src/assets/screenShoot2.png "This is a sample.")
 
 ## Links
 
