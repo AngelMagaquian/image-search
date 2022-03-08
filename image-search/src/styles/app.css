@@ -65,6 +65,10 @@
   margin: 0;
 }
 
+.app-container .header {
+  color: #8685EF;
+}
+
 .app-container .header h1 {
   padding-top: 5rem;
   text-align: center;
@@ -146,6 +150,7 @@
 .footer .author-container .text {
   font-family: 'Ubuntu' !important;
   text-align: right;
+  color: #8685EF;
 }
 
 .footer .bi {
@@ -158,13 +163,17 @@
 }
 
 .footer a :hover {
-  fill: #474554 !important;
+  fill: #8685EF !important;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
+.navbar {
+  background-color: #282A36 !important;
+}
+
 body {
-  background-color: #ACA9BB !important;
+  background-color: #23252F !important;
 }
 
 body * {
