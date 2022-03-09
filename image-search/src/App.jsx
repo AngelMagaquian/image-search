@@ -60,8 +60,8 @@ function App() {
             <div className="row">
               <Search handleSearch={handleSearch}/>
             </div>
+            <a href="https://github.com/AngelMagaquian/image-search" className="text-muted" target="_blank" rel="noopener noreferrer">Link to repository!</a>
           </div>
-          
         </div>
        
        <div className="container image-container">
@@ -75,7 +75,6 @@ function App() {
 
        <Footer/>
     </div>
-   
   );
 }
 

@@ -147,6 +147,10 @@
     } */
 }
 
+.footer .title {
+  color: #8685EF;
+}
+
 .footer .author-container .text {
   font-family: 'Ubuntu' !important;
   text-align: right;
